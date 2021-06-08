@@ -5,7 +5,7 @@ from tkinter import *
 from threading import *
 import requests
 import json
-i = 0
+i =0
 
 
 def genrate_link():
@@ -81,7 +81,7 @@ def startDownload(url):
 
 
 #button funtion
-def btnClicked():
+def btnClicked(i):
     try:
         downloadBtn['text'] = "Please wait..."
         downloadBtn['state'] = 'disabled'
@@ -133,41 +133,41 @@ T5.insert(END,c[0:])
 
 
 
-downloadBtn = Button(root, text="Download Video", font=font, relief='ridge', command=btnClicked)
+downloadBtn = Button(root, text="Download Video", font=font, command=btnClicked(i))
 downloadBtn.pack(side=TOP, pady=20)
 
 
 NextBtn = Button(root, text="NextButton", font=font, relief='ridge', command=nxtClicked)
 NextBtn.pack(side=TOP, pady=20)
 
-b1=Button(root,text="1")
+b1=Button(root,text="1",relief='ridge',command=btnClicked(i=1))
 b1.pack(side=LEFT)
 
-b2=Button(root,text="2")
+b2=Button(root,text="2",command=btnClicked(i=2))
 b2.pack(side=LEFT)
 
-b3=Button(root,text="3")
+b3=Button(root,text="3",command=btnClicked(i=3))
 b3.pack(side=LEFT)
 
-b4=Button(root,text="4")
+b4=Button(root,text="4",command=btnClicked(i=4))
 b4.pack(side=LEFT)
 
-b5=Button(root,text="5")
+b5=Button(root,text="5",command=btnClicked(i=5))
 b5.pack(side=LEFT)
 
-b6=Button(root,text="6")
+b6=Button(root,text="6",command=btnClicked(i=6))
 b6.pack(side=LEFT)
 
-b7=Button(root,text="7")
+b7=Button(root,text="7",command=btnClicked(i=7))
 b7.pack(side=LEFT)
 
-b8=Button(root,text="8")
+b8=Button(root,text="8",command=btnClicked(i=8))
 b8.pack(side=LEFT)
 
-b9=Button(root,text="9")
+b9=Button(root,text="9",command=btnClicked(i=9))
 b9.pack(side=LEFT)
 
-b10=Button(root,text="10")
+b10=Button(root,text="10",command=btnClicked(i=10))
 b10.pack(side=LEFT)
 
 
