@@ -85,7 +85,7 @@ def btnClicked():
     try:
         downloadBtn['text'] = "Please wait..."
         downloadBtn['state'] = 'disabled'
-        url = str(c[0])
+        url = str(c[i])
         if url == '':
             return
         print(url)
