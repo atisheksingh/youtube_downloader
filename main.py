@@ -6,6 +6,7 @@ from threading import *
 import requests
 import json
 i =0
+g=0
 
 
 def genrate_link():
